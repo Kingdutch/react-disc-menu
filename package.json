@@ -1,9 +1,68 @@
 {
   "name": "react-disc-menu",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A circular menu component inspired by Second Life built with React and Styled Components.",
   "main": "lib/index.js",
   "repository": "https://github.com/Kingdutch/react-disc-menu.git",
   "author": "Alexander Varwijk <git@alexandervarwijk.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "BABEL_ENV=development babel --watch src --out-dir lib",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/",
+    "prepublish": "BABEL_ENV=production babel src --out-dir lib"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "package.json"
+  ],
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react-hooks": "^1.2.0",
+    "prettier": "1.16.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/react",
+      "@babel/env"
+    ]
+  },
+  "browserslist": "last 2 versions, ie 10-11",
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended",
+      "react-app"
+    ],
+    "plugins": [
+      "prettier",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui",
+    "web",
+    "menu",
+    "circular",
+    "disc"
+  ]
 }

@@ -1,0 +1,9 @@
+{
+  "name": "react-disc-menu",
+  "version": "1.0.0",
+  "description": "A circular menu component inspired by Second Life built with React and Styled Components.",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Kingdutch/react-disc-menu.git",
+  "author": "Alexander Varwijk <git@alexandervarwijk.com>",
+  "license": "MIT"
+}
